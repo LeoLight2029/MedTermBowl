@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION</title>
+    <link rel="stylesheet" href="question.css">
+</head>
+<body>
+    <div class=container>
+        <h1 id="question"></h1>
+        <div>
+            <button class=answer onclick='reveal()'>Reveal Answer</button>
+            <p id='revealedAnswer'></p>
+        </div>
+        <div class=buttons>
+            <button class = button onclick='correct()' id='correct'>CORRECT</button>
+            <button class = button onclick='incorrect()' id='incorrect'>INCORRECT</button>
+        </div>
+    </div>
+    <script src="question.js"></script>
+</body>
+</html>

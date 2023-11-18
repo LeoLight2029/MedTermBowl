@@ -1,0 +1,44 @@
+body {
+    background: black;
+    overflow:hidden;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+.teambutton{
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 75px;
+    color: white;
+    font-family:monospace;
+    padding: 10px;
+    border-color:white;
+    margin-top: 7%;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button {
+    margin:10%;
+    height:25%;
+    width:25%;
+}
+.teambutton:hover{
+    background-color:teal;
+}
+#teambutton1.customHover:hover{
+    background-color:gray;
+}
+#teambutton2.customHover:hover{
+    background-color:gray;
+}
+#teambutton3.customHover:hover{
+    background-color:gray;
+}

@@ -1,0 +1,41 @@
+body {
+    background: black;
+    overflow:hidden;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    z-index: index 0;;
+}
+.bigstuff{
+    width: 100vw;
+    text-align: center;
+    position:relative;
+    top: 15vh;
+}
+.stuff{
+    color:white;
+    justify-content: center;
+    font-size:300%;
+}
+.otherstuff{
+    color:white;
+    justify-content: center;
+    font-size:300%;
+}
+#button{
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: xxx-large;
+    color: white;
+    font-family:monospace;
+    padding: 10px;
+    border-color:white;
+    margin-top: 5%;
+}
+#button:hover{
+    background-color: teal;
+}

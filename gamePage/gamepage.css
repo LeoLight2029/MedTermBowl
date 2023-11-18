@@ -1,0 +1,127 @@
+body {
+    background: black;
+    overflow:hidden;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    z-index: index 0;;
+}
+.images{
+    position:relative;
+    top:200px;
+    z-index: 1;
+    text-align: center;
+}
+
+.top{
+    position:relative;
+    display: block;
+    margin:0 auto;
+    width:200px;
+    margin-bottom:5%;
+}
+.bottom{
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+}
+
+.bottomleft{
+    position:relative;
+    display: block;
+    margin-left:10%;
+    width:200px;
+}
+.bottomright{
+    position:relative;
+    display: block;
+    margin-right:10%;
+    width:200px;
+}
+
+.buttons{
+    position:relative;
+    top:500px;
+    text-align: center;
+}
+.charge{
+    max-width:200px;
+}
+.hearts{
+    max-width: 200px;
+}
+.question{
+    position:relative;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 450%;
+    color: white;
+    font-family:monospace;
+    padding: 10px;
+    border-color:white;
+    z-index: 2;
+}
+.question:hover{
+    background: teal;
+}
+#attack1{
+    position:relative;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    font-family:monospace;
+    padding: 10px;
+    border-color:white;
+    margin-top: 5%;
+    z-index: 2;
+}
+#attack2{
+    position:relative;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    font-family:monospace;
+    padding: 10px;
+    border-color:white;
+    margin-top: 5%;
+    z-index: 2;
+}
+#attack3{
+    position:relative;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    font-family:monospace;
+    padding: 10px;
+    border-color:white;
+    margin-top: 5%;
+    z-index: 2;
+}
+#img1.activated{
+    cursor:pointer
+}
+#img1.activated:hover{
+    background-color: red;
+}
+#img2.activated{
+    cursor:pointer
+}
+#img2.activated:hover{
+    background-color: red;
+}
+#img3.activated{
+    cursor:pointer
+}
+#img3.activated:hover{
+    background-color: red;
+}

@@ -1,0 +1,113 @@
+body {
+    background: black;
+    overflow:hidden;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.teams{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin:20px;
+    padding:10px;
+    
+}
+
+.team1, .team2, .team3{
+    flex:1;
+    text-align:center;
+    margin:0;
+    padding:10px;
+    font-size: x-large;
+}
+h1{
+    color:white;
+    text-decoration: underline;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+/*DROP SHADOWS*/
+.teamtitle1{
+    text-shadow:
+    1px 1px 1px red,
+    2px 2px 1px red;
+}
+.teamtitle2{
+    text-shadow:
+    1px 1px 1px blue,
+    2px 2px 1px blue;
+}
+.teamtitle3{
+    text-shadow:
+    1px 1px 1px green,
+    2px 2px 1px green;
+}
+
+.center{
+    text-align: center;
+}
+
+.start{
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: xxx-large;
+    color: white;
+    font-family:monospace;
+    padding: 10px;
+    border-color:white;
+    margin-top: 5%;
+}
+.bottomleft{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+.bottomright{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+}
+.start1{
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: large;
+    color: white;
+    font-family:monospace;
+    padding: 10px;
+    border-color:white;
+    margin-top: 5%;
+}
+.start:hover{
+    background-color: teal;
+}
+
+p{
+    color: white;
+}
+/*Randomize Team Button*/
+.randomizeTeam{
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: xxx-large;
+    color: white;
+    font-family:monospace;
+    padding: 10px;
+    border-color:white;
+    margin-top: 7%;
+}
+
+.randomizeTeam:hover{
+    background-color:teal;
+}
