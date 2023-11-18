@@ -86,11 +86,11 @@ localStorage.setItem('randomizedList', JSON.stringify(teammaker(0, 15)));
 });
 
 document.getElementById('start1').addEventListener('click', function(){
-    window.location.href = '../gamePage/GamePage.html';
+    window.location.href = 'gamePage/GamePage.html';
 }); 
 function buzzerPage(){
-    window.location.href = '../buzzingPage/buzing.html';
+    window.location.href = 'buzzingPage/buzing.html';
 }
 function infoPage(){
-    window.location.href = '../infoPage/info.html';
+    window.location.href = 'infoPage/info.html';
 }
