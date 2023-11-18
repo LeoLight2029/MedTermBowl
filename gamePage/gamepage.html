@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gamepage.css ">
+    <title>TEAMS</title>
+</head>
+<body>
+    <div class=images>
+        <div class = "top">
+            <img src="../images/2hearts.png" id = "hearts1" class="hearts">
+            <img src="../images/purple.png" alt="img1" id='img1' onclick='attacked(1)'>
+            <img src="../images/0charge.png" id = 'charge1' class= 'charge'>
+            <button id='attack1'onclick='attack(1)'style='display:none'>ATTACK</button>
+        </div>
+
+        <div class="bottom">
+            <div class="bottomleft">
+                <img src="../images/2hearts.png" id = "hearts2" class="hearts">
+                <img src="../images/blue.png"alt="img2" id='img2' onclick='attacked(2)'>
+                <img src="../images/0charge.png" id = 'charge2' class= 'charge'>
+                <button id='attack2'onclick='attack(2)'style='display:none'>ATTACK</button>
+            </div>
+            <div class="bottomright">
+                <img src="../images/2hearts.png" id = "hearts3" class="hearts">
+                <img src="../images/pink.png" alt="img3" id='img3' onclick='attacked(3)'>
+                <img src="../images/0charge.png" id = 'charge3' class= 'charge'>
+                <button id='attack3'onclick='attack(3)'style='display:none'>ATTACK</button>
+            </div>
+        </div>
+        <div class=questionbutton>
+            <button class=question onclick="nextpage()">QUESTION</button>
+        </div>
+    </div>
+    <script src="gamepage.js"></script>
+</body>
+</html>

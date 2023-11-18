@@ -107,9 +107,6 @@ function repeatList(){
     const randomizedList = JSON.parse(randomizedListString);
     console.log(randomizedList)
 }
-function goBack(){
-    window.location.href = '../index.html';
-}
 function nextpage(){
     window.location.href = '../selectorPage/selector.html';
 }
