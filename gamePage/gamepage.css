@@ -11,7 +11,7 @@ body {
 }
 .images{
     position:relative;
-    top:200px;
+    top:100px;
     z-index: 1;
     text-align: center;
 }
