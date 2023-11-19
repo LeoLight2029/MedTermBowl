@@ -93,4 +93,5 @@ function buzzerPage(){
 }
 function infoPage(){
     window.location.href = 'infoPage/info.html';
+    localStorage.clear()
 }

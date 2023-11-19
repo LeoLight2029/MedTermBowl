@@ -12,12 +12,12 @@ body {
     background-color: transparent;
     cursor: pointer;
     border-radius: 50px;
-    font-size: 75px;
+    font-size: 5vh;
     color: white;
     font-family:monospace;
     padding: 10px;
     border-color:white;
-    margin-top: 7%;
+    margin-top: 4vh;
 }
 .buttons{
     display: flex;

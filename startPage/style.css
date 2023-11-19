@@ -13,8 +13,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    margin:20px;
-    padding:10px;
+    margin:2vh;
+    padding:1vh;
     
 }
 
@@ -22,8 +22,8 @@ body {
     flex:1;
     text-align:center;
     margin:0;
-    padding:10px;
-    font-size: x-large;
+    padding:1vh;
+    font-size: 2.5vh;
 }
 h1{
     color:white;
@@ -57,13 +57,13 @@ h1{
 .start{
     background-color: transparent;
     cursor: pointer;
-    border-radius: 50px;
-    font-size: xxx-large;
+    border-radius: 50vh;
+    font-size: 4vh;
     color: white;
     font-family:monospace;
-    padding: 10px;
+    padding: 1vh;
     border-color:white;
-    margin-top: 5%;
+    margin-top: 1vh;
 }
 .bottomleft{
     position: fixed;
@@ -80,13 +80,13 @@ h1{
 .start1{
     background-color: transparent;
     cursor: pointer;
-    border-radius: 50px;
-    font-size: large;
+    border-radius: 50vh;
+    font-size: 2vh;
     color: white;
     font-family:monospace;
-    padding: 10px;
+    padding: 1vh;
     border-color:white;
-    margin-top: 5%;
+    margin-top: 1vh;
 }
 .start:hover{
     background-color: teal;
@@ -94,18 +94,19 @@ h1{
 
 p{
     color: white;
+    font-size: 2vh;
 }
 /*Randomize Team Button*/
 .randomizeTeam{
     background-color: transparent;
     cursor: pointer;
-    border-radius: 50px;
-    font-size: xxx-large;
+    border-radius: 50vh;
+    font-size: 3vh;
     color: white;
     font-family:monospace;
-    padding: 10px;
+    padding: 1vh;
     border-color:white;
-    margin-top: 7%;
+    margin-top: 2vh;
 }
 
 .randomizeTeam:hover{
