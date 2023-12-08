@@ -2,12 +2,20 @@ body {
     background: black;
     overflow:hidden;
 }
-
 .star {
     position: absolute;
     background-color: white;
     border-radius: 50%;
-    z-index: index 0;;
+}
+
+.moving-star {
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(-100vh);
+    }
 }
 .images{
     position:relative;

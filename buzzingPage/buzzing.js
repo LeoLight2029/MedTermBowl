@@ -1,12 +1,15 @@
-//STARS
-function createRandomStar() {
+//STAR
+function createRandomStar(className, duration, delay) {
   const star = document.createElement('div');
-  star.className = 'star';
+  star.className = 'star ' + className;
   const size = Math.random() * 2;
   star.style.width = size + 'px';
   star.style.height = size + 'px';
   star.style.left = Math.random() * window.innerWidth + 'px';
   star.style.top = Math.random() * window.innerHeight + 'px';
+  if (className === 'moving-star') {
+      star.style.animation = `fall ${duration}s linear ${delay}s infinite`;
+  }
   document.body.appendChild(star);
 }
 
@@ -15,18 +18,21 @@ function removeStars() {
   stars.forEach(star => star.remove());
 }
 
-function createRandomStars(count) {
+function createRandomStars(count, className) {
   for (let i = 0; i < count; i++) {
-      createRandomStar();
+      const duration = Math.random() * 20 + 30;
+      const delay = Math.random() * 40;
+      createRandomStar(className, duration, delay);
   }
 }
 
-  createRandomStars(1000);
+createRandomStars(500, 'still-star');
+createRandomStars(250, 'moving-star');
 
 window.addEventListener('resize', function() {
   removeStars();
-  createRandomStars(1500); 
-
+  createRandomStars(500, 'still-star');
+  createRandomStars(250, 'moving-star');
 });
 let isSpacePressed = false;
 

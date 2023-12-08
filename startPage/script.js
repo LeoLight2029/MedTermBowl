@@ -2,7 +2,7 @@
 function createRandomStar(className, duration, delay) {
     const star = document.createElement('div');
     star.className = 'star ' + className;
-    const size = Math.random() * 2; // Random size between 0 and 2px
+    const size = Math.random() * 2;
     star.style.width = size + 'px';
     star.style.height = size + 'px';
     star.style.left = Math.random() * window.innerWidth + 'px';
@@ -36,7 +36,6 @@ window.addEventListener('resize', function() {
 });
 //button stuff
 document.getElementById('randomizeTeam').addEventListener('click', function(){
-
 const classmates = [
     "Veronica",
     "Lola",
@@ -89,12 +88,13 @@ localStorage.setItem('randomizedList', JSON.stringify(teammaker(0, 15)));
 });
 
 document.getElementById('start1').addEventListener('click', function(){
-    window.location.href = 'gamePage/gamepage.html';
+    setTimeout(function() {
+        window.location.href = '/gamePage/gamepage';
+      }, 2000);
 }); 
 function buzzerPage(){
     window.location.href = 'buzzingPage/buzing.html';
 }
 function infoPage(){
-    window.location.href = 'infoPage/info.html';
     localStorage.clear()
 }

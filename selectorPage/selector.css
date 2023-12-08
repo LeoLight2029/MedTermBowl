@@ -2,11 +2,20 @@ body {
     background: black;
     overflow:hidden;
 }
-
 .star {
     position: absolute;
     background-color: white;
     border-radius: 50%;
+}
+
+.moving-star {
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(-100vh);
+    }
 }
 .teambutton{
     background-color: transparent;

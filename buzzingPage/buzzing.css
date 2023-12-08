@@ -1,13 +1,21 @@
 body {
     background: black;
-    overflow: hidden;
+    overflow:hidden;
 }
-
 .star {
     position: absolute;
     background-color: white;
     border-radius: 50%;
-    z-index: 0;;
+}
+
+.moving-star {
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(-100vh);
+    }
 }
 
 .text {
