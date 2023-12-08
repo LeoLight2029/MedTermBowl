@@ -89,7 +89,7 @@ localStorage.setItem('randomizedList', JSON.stringify(teammaker(0, 15)));
 
 document.getElementById('start1').addEventListener('click', function(){
     setTimeout(function() {
-        window.location.href = '/gamePage/gamepage';
+        window.location.href = '/gamePage/gamepage.html';
       }, 2000);
 }); 
 function buzzerPage(){
