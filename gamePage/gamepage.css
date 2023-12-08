@@ -70,8 +70,10 @@ img{
     padding: 2vh;
     border-color:white;
     z-index: 2;
+    transition: all 0.3s ease-in-out;
 }
 .question:hover{
+    transform: translateY(-10px);
     background: teal;
 }
 #attack1{
@@ -86,6 +88,7 @@ img{
     border-color:white;
     margin-top: 1vh;
     z-index: 2;
+    transition: all 0.3s ease-in-out;
 }
 #attack2{
     position:relative;
@@ -99,6 +102,7 @@ img{
     border-color:white;
     margin-top: 1vh;
     z-index: 2;
+    transition: all 0.3s ease-in-out;
 }
 #attack3{
     position:relative;
@@ -112,20 +116,36 @@ img{
     border-color:white;
     margin-top: 1vh;
     z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+#attack1:hover{
+    transform: translateY(-5px);
+    background-color: red;
+}
+#attack2:hover{
+    transform: translateY(-5px);
+    background-color: red;
+}
+#attack3:hover{
+    transform: translateY(-5px);
+    background-color: red;
 }
 #img1.activated{
+    transition: all 0.3s ease-in-out;
     cursor:pointer
 }
 #img1.activated:hover{
     background-color: red;
 }
 #img2.activated{
+    transition: all 0.3s ease-in-out;
     cursor:pointer
 }
 #img2.activated:hover{
     background-color: red;
 }
 #img3.activated{
+    transition: all 0.3s ease-in-out;
     cursor:pointer
 }
 #img3.activated:hover{

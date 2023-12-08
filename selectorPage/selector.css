@@ -18,6 +18,7 @@ body {
     padding: 10px;
     border-color:white;
     margin-top: 4vh;
+    transition: all 0.3s ease-in-out;
 }
 .buttons{
     display: flex;
@@ -31,6 +32,7 @@ button {
     width:25%;
 }
 .teambutton:hover{
+    transform: translateY(-5px);
     background-color:teal;
 }
 #teambutton1.customHover:hover{

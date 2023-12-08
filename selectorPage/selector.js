@@ -37,10 +37,27 @@ function changeHoverColor() {
         }
     }
 }
+function addCharge(playerNumber){
+    if(localStorage.getItem(`player${playerNumber}charge`)=='../images/0charge.png'){
+        localStorage.setItem(`player${playerNumber}charge`,'../images/1charge.png')
+    }else if(localStorage.getItem(`player${playerNumber}charge`)=='../images/1charge.png'){
+        localStorage.setItem(`player${playerNumber}charge`,'../images/2charge.png')
+    }
+}
+function removeCharge(playerNumber){
+    if(localStorage.getItem(`player${playerNumber}charge`)!='../images/0charge.png'){
+        localStorage.setItem(`player${playerNumber}charge`,'../images/0charge.png')
+    }
+}
 function team(teamNumber){
     if(localStorage.getItem(`player${teamNumber}hearts`)==='../images/2hearts.png' || localStorage.getItem(`player${teamNumber}hearts`)==='../images/1hearts.png'){
-        localStorage.setItem('teamSelected', teamNumber)
-        window.location.href='../questionPage/question.html'
+        if(localStorage.getItem('correctState')==='correct'){
+            addCharge(teamNumber)
+            window.location.href='../gamePage/gamepage.html'
+        }else if(localStorage.getItem('correctState')==='incorrect'){
+            removeCharge(teamNumber)
+            window.location.href='../gamePage/gamepage.html'
+        }
     }else{
         return;
     }

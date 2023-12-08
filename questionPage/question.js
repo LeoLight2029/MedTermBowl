@@ -92,30 +92,17 @@ if(storedNumber){
     document.getElementById('revealedAnswer').textContent=answers[localStorage.getItem('questionNumber')]
 }
 
-function addCharge(playerNumber){
-    if(localStorage.getItem(`player${playerNumber}charge`)=='../images/0charge.png'){
-        localStorage.setItem(`player${playerNumber}charge`,'../images/1charge.png')
-    }else if(localStorage.getItem(`player${playerNumber}charge`)=='../images/1charge.png'){
-        localStorage.setItem(`player${playerNumber}charge`,'../images/2charge.png')
-    }
-}
-function removeCharge(playerNumber){
-    if(localStorage.getItem(`player${playerNumber}charge`)!='../images/0charge.png'){
-        localStorage.setItem(`player${playerNumber}charge`,'../images/0charge.png')
-    }
-}
-
 function correct(){
     storedNumber++
     localStorage.setItem('questionNumber', storedNumber)
-    addCharge(localStorage.getItem('teamSelected'))
-    window.location.href='../gamePage/gamepage.html'
+    localStorage.setItem('correctState', 'correct')
+    window.location.href='../selectorPage/selector.html'
 }
 function incorrect(){
     storedNumber++
     localStorage.setItem('questionNumber', storedNumber)
-    removeCharge(localStorage.getItem('teamSelected'))
-    window.location.href='../gamePage/gamepage.html'
+    localStorage.setItem('correctState', 'incorrect')
+    window.location.href='../selectorPage/selector.html'
     
 }
 function reveal(){

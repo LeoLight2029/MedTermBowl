@@ -2,11 +2,20 @@ body {
     background: black;
     overflow:hidden;
 }
-
 .star {
     position: absolute;
     background-color: white;
     border-radius: 50%;
+}
+
+.moving-star {
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(-100vh);
+    }
 }
 
 .teams{
@@ -64,6 +73,7 @@ h1{
     padding: 1vh;
     border-color:white;
     margin-top: 1vh;
+    transition: all 0.3s ease-in-out;
 }
 .bottomleft{
     position: fixed;
@@ -87,8 +97,14 @@ h1{
     padding: 1vh;
     border-color:white;
     margin-top: 1vh;
+    transition: all 0.3s ease-in-out;
 }
 .start:hover{
+    transform: translateY(-10px);
+    background-color: teal;
+}
+.start1:hover{
+    transform: translateY(-5px);
     background-color: teal;
 }
 
@@ -107,8 +123,10 @@ p{
     padding: 1vh;
     border-color:white;
     margin-top: 2vh;
+    transition: all 0.3s ease-in-out;
 }
 
 .randomizeTeam:hover{
+    transform:translateY(-5px);
     background-color:teal;
 }

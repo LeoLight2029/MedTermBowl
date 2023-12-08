@@ -108,7 +108,7 @@ function repeatList(){
     console.log(randomizedList)
 }
 function nextpage(){
-    window.location.href = '../selectorPage/selector.html';
+    window.location.href = '../questionPage/question.html';
 }
 //WINNING
 function checkCondition() {
